@@ -1,0 +1,85 @@
+# Ground Station GUI
+
+## Introduction
+
+## Features
+
+- Issue preset commands
+- Issue custom commands
+- Set uplink and downlink
+- Direct output to GUI or console
+- View console
+- View packet data
+
+##Possible Future Features
+
+- Download images
+- Create CSV file of package data
+- Save received images as JPEG files
+- View 3D model of satellite
+
+## Built With
+
+Tkinter
+pyserial
+
+## Getting Started
+
+## Prerequitsites
+
+A Python development evironment eg: [LiClipse](https://www.liclipse.com/download.html)
+[Python 2.7](https://www.python.org/downloads/)
+[pyserial](https://pypi.org/project/pyserial/#files)
+
+## Installation
+
+### Install pyserial
+
+Using pip, execute the following command:
+```<path_to_python>\python27\python.exe -m pip install pyserial```
+
+Alternatively, donwload pyserial from the website, unzip the downloaded file and 
+within the unzipped directory execute the following command:
+```python setup.py install```
+
+### Install GUI
+
+## Tests
+
+## How To Use
+
+To use the GUI, run main.py
+
+First, uplink and downlink connections must be established. To do this, select 
+ports you want to use for the uplink and downlink using the drop-down menus
+labelled "Uplink COM" and "Downlink COM" and enter the uplink and downlink rates
+in the text fields to the immediate right of the drop-down menus. Set the connection
+then open it. If you want the downlink and uplink connections to be the same, 
+enter the same infomration for both uplink and downlink. The connection must be 
+closed before another can be established 
+
+Use the buttons on the top left of the window to issue commands. Custom commands
+and TLE information can be sent using the text field labelled "Input". TLE information 
+must have '\r\n' separating the two lines e.g. "1 25544U 97067A   08264.51782528 -.00002182  00000-0 -11606-4 0  2927\r\n2 25544  51.6416 247.4627 0006703 130.5360 325.0288 15.72125391563537"
+The bottom text field displays the programs output. The top right text field displays 
+a table of packet contents. stdout can be directed to the GUI's console or Python's 
+console using the buttons below the GUI's console.
+
+## Screenshots
+
+[[]]
+
+## TODO
+
+Save picture to hard disk
+Save packet info as csv file
+Display picture on GUI
+Parse pic packets and construct jpeg file
+
+## Authors
+
+[Bence Nagy](bence@pocketqubeshop.com)
+
+[Scott Hurley](scott.james.hurley.97@gmail.com)
+
+## License
